@@ -554,6 +554,7 @@ nav .current {
 }
 .socials-box {
   margin-left: 70px;
+  margin-right: 93px;
 }
 .socials {
   font-weight: 700;
@@ -649,19 +650,34 @@ nav .current {
   line-height: 1.15;
   color: var(--color-primary);
 }
+.input-name{
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+color: var(--color-second);
+margin-bottom: 4px;
 
+}
 .input-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 .modal-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+  
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 10px;
+  padding-left: 42px;
   color: var(--color-primary);
+  outline: transparent;
+}
+.modal-input:focus {
+border-color: var(--color-active);
+}
+.modal-input:focus + .modal-icon{
+  fill: var(--color-active);
 }
 
 .modal-icon {
@@ -675,6 +691,9 @@ nav .current {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
+
+  padding: 16px 12px;
 }
 .modal-button {
   display: block;
