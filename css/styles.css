@@ -589,7 +589,46 @@ nav .current {
   height: 20px;
   fill: var(--color-fone);
 }
+.footer-button {
+  display: inline-flex;
+  margin: 0 auto;
 
+  padding: 10px 52px;
+
+  border: none;
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-fone);
+  background-color: var(--color-active);
+
+  cursor: pointer;
+
+  transition: background-color var(--shift);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--color-hero);
+}
+.icon-send-mail{
+  margin-left: 10px;
+}
+.modal-input-footer{
+  width: 358px;
+  height: 50px;
+  
+background-color: transparent;
+  padding-left: 16px;
+  color: var(--color-fone);
+  font-size: 16px;
+
+ border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+}
 /*Модальне вікно*/
 .backdrop {
   width: 100%;
@@ -687,18 +726,38 @@ border-color: var(--color-active);
   transform: translateY(-50%);
 }
 .modal-text {
+  padding: 16px 12px;
+  
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: transparent;
+}
+.modal-text::placeholder{
+  font-size: 12px;
+line-height: 1.17
+color: rgba(117, 117, 117, 0.5);
+}
+.modal-text:focus{
+  border-color: var(--color-active);
+}
 
-  padding: 16px 12px;
+.link-agree{
+    line-height: 2;
+  color: var(--color-active);
+ transition: color var(--shift);
+ text-decoration:underline;
+}
+.link-agree:focus,
+.link-agree:hover{
+color: var(--color-hero);
 }
 .modal-button {
   display: block;
   margin: 0 auto;
-
+margin-top: 30px;
   padding: 10px 52px;
 
   border: none;
@@ -709,7 +768,7 @@ border-color: var(--color-active);
   line-height: 1.9;
   color: var(--color-fone);
   background-color: var(--color-active);
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 
   transition: background-color var(--shift);
@@ -718,3 +777,4 @@ border-color: var(--color-active);
 .modal-button:focus {
   background-color: var(--color-hero);
 }
+
