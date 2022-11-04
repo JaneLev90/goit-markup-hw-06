@@ -440,7 +440,7 @@
         </div>
         <div class="input-footer">
           <p class="socials">Підпишіться на розсилку</p>
-          <div class="footer-list">
+          <form class="footer-list">
             <input
               type="email"
               name="user-email"
@@ -454,7 +454,7 @@
                 <use href="images/sprite1.svg#icon-send-mail"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -516,8 +516,8 @@
             </div>
           </label>
 
-          <div class="input-wrap">
-            <label for="user-comment" class="input-label input-name">
+          <div class="input-wrap indent">
+            <label for="user-comment" class="input-name">
               Коментар
             </label>
             <textarea
@@ -528,14 +528,16 @@
             ></textarea>
           </div>
           <div class="check-group">
-            <input
+               
+            <label class="checkbox">
+              <input
               class="check"
               type="checkbox"
-              name="checkbox"
-              id="checkbox"
-            />
-            <label class="checkbox" for="checkbox"
-              >Погоджуюся з розсилкою та приймаю
+              name="checkbox"/>
+              <span class="icon-box"><svg width="16" height="15">
+                <use href="./images/sprite1.svg#icon-box"
+              </svg></span>
+              Погоджуюся з розсилкою та приймаю
               <a class="link-agree" href="#">Умови договору</a>
             </label>
           </div>
