@@ -590,7 +590,7 @@ nav .current {
   fill: var(--color-fone);
 }
 .input-footer{
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-button {
   display: flex;
@@ -755,6 +755,8 @@ border-color: var(--color-active);
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--shift);
+
 }
 .modal-text {
   padding: 16px 12px;
